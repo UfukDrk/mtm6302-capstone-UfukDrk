@@ -32,3 +32,14 @@ The mockup includes desktop, tablet, and mobile layouts. The desktop layout uses
 ### Usability and User Experience
 
 The mockup improves usability by keeping the navigation simple, placing the main button near the top, and organizing the content into clear sections. The responsive layouts make the website easier to use on different screen sizes.
+## Assignment 3: Static Prototype Report
+
+For Assignment 3, I created a static prototype for the Crest Digital capstone project using HTML and CSS. The prototype is based on the visual mockup completed in Assignment 2. I started by creating a new branch called `assignment-3-prototype` before making changes to the project files.
+
+The prototype includes a homepage with a header, logo, navigation menu, hero section, call-to-action button, project preview area, service cards, and footer. The design was updated to match the Crest Digital brand, which focuses on social media management, digital marketing, video advertising, and helping individuals or businesses grow their online presence.
+
+I used custom CSS in `style.css` to create the layout, colours, spacing, cards, footer, and responsive design. I did not use Bootstrap, Tailwind, or any other CSS framework. The website uses a system font stack: Arial, Helvetica, sans-serif.
+
+The resources used for this prototype include the provided Crest Digital logo and project images. No external CSS framework or external font was used.
+
+One challenge was making the prototype closely match the mockup while also improving it with real branding and images. Another challenge was making the layout responsive so the navigation, hero section, preview image, cards, and footer display properly on desktop, tablet, and mobile screens.
