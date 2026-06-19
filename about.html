@@ -3,15 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Crest Digital | About</title>
+    <title>APOD Search | About</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body class="about-page">
     <header class="site-header">
       <nav class="navbar">
         <a href="index.html" class="logo">
-          <img src="images/logo.png" alt="Crest Digital logo" />
-          <span>Crest Digital</span>
+          <span class="logo-icon">✦</span>
+          <span>APOD Search</span>
         </a>
         <ul class="nav-links">
           <li><a href="index.html">Home</a></li>
@@ -21,93 +21,86 @@
       </nav>
     </header>
     <main>
-      <section class="about-hero">
-        <div class="about-hero-content">
-          <h1>About Crest Digital</h1>
+      <section class="hero-section small-hero">
+        <div class="hero-content">
+          <h1>About APOD Search</h1>
           <p>
-            We are a creative digital team helping businesses and personal
-            brands grow through social media, video content, design, and
-            marketing strategy.
+            APOD Search is a simple astronomy web application that lets users
+            explore NASA's Astronomy Picture of the Day by choosing a date.
           </p>
         </div>
       </section>
-      <section class="about-section">
-        <div class="about-grid">
-          <div class="about-image">
-            <img
-              src="images/about-team.png"
-              alt="Crest Digital team working together"
-            />
-          </div>
-          <div class="about-text">
-            <h2>Who We Are</h2>
-            <p>
-              Crest Digital is a team of six students working together across
-              different locations. In Ottawa, we have three designers and
-              videographers who meet directly with clients, understand their
-              needs, and create visual content for their brands.
-            </p>
-            <p>
-              Our coding team works from different countries. We have one coder
-              in the United Kingdom and two coders in Turkey. They help with
-              website structure, digital systems, and technical parts of our
-              projects.
-            </p>
-            <p>
-              By staying organized and communicating regularly, we are able to
-              accept different types of projects and complete them in the best
-              way we can. Our goal is to make every client look professional and
-              active online.
-            </p>
-          </div>
-        </div>
-      </section>
-      <section class="mission-section">
-        <h2>Our Mission</h2>
-        <p>
-          Our mission is to carry the social media workload for individuals and
-          businesses. We help with planning, filming, editing, posting, and
-          promoting content so our clients can focus on their own work.
+      <section class="preview-section">
+        <h2>Project Purpose</h2>
+        <p class="section-intro">
+          The goal of this project is to create a responsive single-page style
+          web application using HTML, CSS, JavaScript, the Fetch API, and local
+          storage. Users can search for astronomy images, read NASA's
+          explanation, and save favourite images in their browser.
         </p>
+        <div class="preview-box">
+          <article class="apod-card">
+            <img
+              src="images/about-space.jpg"
+              alt="Astronomy themed preview for APOD Search"
+            />
+            <h3>Explore Space Through NASA Images</h3>
+            <p class="apod-explanation">
+              NASA's APOD collection includes images of planets, galaxies,
+              stars, nebulae, moons, and other astronomy topics. This project
+              makes those images easier to search by date.
+            </p>
+          </article>
+        </div>
       </section>
-      <section class="values-section">
-        <div class="value-card">
-          <h3>Creative Work</h3>
-          <p>
-            We create social media content, videos, and digital visuals that
-            match each brand.
-          </p>
-        </div>
-        <div class="value-card">
-          <h3>Team Communication</h3>
-          <p>
-            We work as a connected team even when our members are in different
-            countries.
-          </p>
-        </div>
-        <div class="value-card">
-          <h3>Client Focus</h3>
-          <p>
-            We communicate directly with clients and try to understand what
-            their business needs.
-          </p>
+      <section class="features-section">
+        <h2>How It Works</h2>
+        <div class="feature-cards">
+          <article class="feature-card">
+            <h3>Choose a Date</h3>
+            <p>
+              Users select a non-future date using the date input on the
+              homepage.
+            </p>
+          </article>
+          <article class="feature-card">
+            <h3>Fetch APOD Data</h3>
+            <p>
+              The app uses NASA's APOD API to retrieve the image, title, date,
+              and explanation.
+            </p>
+          </article>
+          <article class="feature-card">
+            <h3>Save Favourites</h3>
+            <p>
+              Users can save favourite images, and the data is stored in local
+              storage.
+            </p>
+          </article>
         </div>
       </section>
     </main>
     <footer class="site-footer">
       <div class="footer-content">
-        <h2>Crest Digital</h2>
+        <h2>APOD Search</h2>
         <p>
-          We carry your social media workload and help your brand reach its
-          peak.
+          A responsive web application using NASA's Astronomy Picture of the Day
+          API.
         </p>
         <ul class="social-links">
-          <li><a href="#">Instagram</a></li>
-          <li><a href="#">TikTok</a></li>
-          <li><a href="#">Twitter / X</a></li>
-          <li><a href="#">Facebook</a></li>
+          <li>
+            <a href="https://api.nasa.gov/" target="_blank" rel="noopener"
+              >NASA API</a
+            >
+          </li>
+          <li>
+            <a href="https://apod.nasa.gov/" target="_blank" rel="noopener"
+              >APOD Archive</a
+            >
+          </li>
+          <li><a href="index.html#favourites">Favourites</a></li>
         </ul>
-        <p class="copyright">&copy; 2026 Crest Digital. Capstone Prototype.</p>
+        <p class="copyright">&copy; 2026 APOD Search. Capstone Prototype.</p>
       </div>
     </footer>
   </body>
