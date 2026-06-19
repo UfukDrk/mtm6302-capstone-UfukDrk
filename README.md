@@ -32,14 +32,17 @@ The mockup includes desktop, tablet, and mobile layouts. The desktop layout uses
 ### Usability and User Experience
 
 The mockup improves usability by keeping the navigation simple, placing the main button near the top, and organizing the content into clear sections. The responsive layouts make the website easier to use on different screen sizes.
-## Assignment 3: Static Prototype Report
 
-For Assignment 3, I created a static prototype for the Crest Digital capstone project using HTML and CSS. The prototype is based on the visual mockup completed in Assignment 2. I started by creating a new branch called `assignment-3-prototype` before making changes to the project files.
+## Assignment 3: APOD Search Prototype Report
 
-The prototype includes a homepage with a header, logo, navigation menu, hero section, call-to-action button, project preview area, service cards, and footer. The design was updated to match the Crest Digital brand, which focuses on social media management, digital marketing, video advertising, and helping individuals or businesses grow their online presence.
+For Assignment 3, I updated the prototype to match the APOD Search project requirements. The main application was created using index.html, style.css, and script.js. The layout still follows the original low-fidelity wireframe structure with a header, navigation, hero section, form area, result/preview area, card section, and footer.
 
-I used custom CSS in `style.css` to create the layout, colours, spacing, cards, footer, and responsive design. I did not use Bootstrap, Tailwind, or any other CSS framework. The website uses a system font stack: Arial, Helvetica, sans-serif.
+The homepage allows users to choose a non-future date and search for NASA’s Astronomy Picture of the Day using the NASA APOD API. The result displays the image, title, date, and explanation. If the APOD is an image, users can click the image to open the high-definition version in a new tab.
 
-The resources used for this prototype include the provided Crest Digital logo and project images. No external CSS framework or external font was used.
+I also added favourites functionality using JavaScript and local storage. Users can save an APOD image as a favourite, view saved favourites on the page, and delete favourites. The app uses JavaScript event listeners for form submission, saving favourites, and deleting favourites. No inline event attributes were used.
 
-One challenge was making the prototype closely match the mockup while also improving it with real branding and images. Another challenge was making the layout responsive so the navigation, hero section, preview image, cards, and footer display properly on desktop, tablet, and mobile screens.
+The design was updated with a space-themed visual style. I used custom CSS for the layout, colours, spacing, responsive design, result cards, form styling, and favourites section. I did not use Bootstrap, Tailwind, or any other CSS framework.
+
+The resources used for this prototype include NASA’s APOD API and space-themed images used for the page visuals. The project uses a system font stack: Arial, Helvetica, sans-serif.
+
+One challenge was changing the original prototype idea into the APOD Search application while keeping the same low-fidelity wireframe structure. Another challenge was adding the required JavaScript features, including Fetch API requests, local storage, favourites, and delete functionality, while keeping the code simple and organized.
