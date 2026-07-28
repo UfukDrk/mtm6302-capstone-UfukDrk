@@ -1,95 +1,95 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>APOD Search | Home</title>
-    <link rel="stylesheet" href="style.css" />
-    <script src="script.js" defer></script>
-  </head>
-  <body class="home-page">
-    <header class="site-header">
-      <nav class="navbar">
-        <a href="index.html" class="logo">
-          <span class="logo-icon">✦</span>
-          <span>APOD Search</span>
-        </a>
-        <ul class="nav-links">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
-    </header>
-    <main>
-      <section class="hero-section">
-        <div class="hero-content">
-          <h1>Discover NASA's Astronomy Picture of the Day</h1>
-          <p>
-            Choose a date and explore an astronomy image from NASA's APOD
-            collection. Save your favourite discoveries and view them again
-            later.
-          </p>
-          <form
-            id="apod-form"
-            class="search-form"
-            aria-label="Search NASA Astronomy Picture of the Day by date"
-          >
-            <label for="apod-date">Choose a non-future date</label>
-            <div class="form-row">
-              <input type="date" id="apod-date" name="apod-date" required />
-              <button type="submit" class="button">Search APOD</button>
-            </div>
-          </form>
-          <p id="message" class="message" aria-live="polite"></p>
-        </div>
-      </section>
-      <section class="preview-section" aria-labelledby="result-heading">
-        <h2 id="result-heading">Astronomy Picture Result</h2>
-        <p class="section-intro">
-          The selected Astronomy Picture of the Day will appear below with its
-          title, date, and explanation.
-        </p>
-        <div id="apod-result" class="preview-box">
-          <p>Select a date to view NASA's Astronomy Picture of the Day.</p>
-        </div>
-      </section>
-      <section
-        id="favourites"
-        class="features-section"
-        aria-labelledby="favourites-heading"
-      >
-        <h2 id="favourites-heading">Saved Favourites</h2>
-        <p class="section-intro">
-          Favourite images are saved in your browser using local storage.
-        </p>
-        <div id="favourites-list" class="feature-cards">
-          <p>No favourites saved yet.</p>
-        </div>
-      </section>
-    </main>
-    <footer class="site-footer">
-      <div class="footer-content">
-        <h2>APOD Search</h2>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>APOD Search</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <header class="site-header">
+    <nav class="navbar" aria-label="Main navigation">
+      <a href="#home" class="logo">
+        <span class="logo-icon">✦</span>
+        <span>APOD Search</span>
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#search">Search</a></li>
+        <li><a href="#favourites">Favourites</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="home">
+    <section class="hero-section">
+      <div class="hero-content">
+        <h1>Discover NASA's Astronomy Picture of the Day</h1>
         <p>
-          A responsive web application using NASA's Astronomy Picture of the Day
-          API.
+          Choose a non-future date to explore NASA's Astronomy Picture of the Day.
+          View the image, read the explanation, and save your favourite discoveries.
         </p>
-        <ul class="social-links">
-          <li>
-            <a href="https://api.nasa.gov/" target="_blank" rel="noopener"
-              >NASA API</a
-            >
-          </li>
-          <li>
-            <a href="https://apod.nasa.gov/" target="_blank" rel="noopener"
-              >APOD Archive</a
-            >
-          </li>
-          <li><a href="#favourites">Favourites</a></li>
-        </ul>
-        <p class="copyright">&copy; 2026 APOD Search. Capstone Prototype.</p>
+        <form id="apod-form" class="search-form" aria-label="Search NASA Astronomy Picture of the Day by date">
+          <label for="apod-date">Choose a non-future date</label>
+          <div class="form-row">
+            <input type="date" id="apod-date" name="apod-date" required>
+            <button type="submit" class="button">Search APOD</button>
+          </div>
+        </form>
+        <p id="message" class="message" aria-live="polite"></p>
       </div>
-    </footer>
-  </body>
+    </section>
+
+    <section id="search" class="preview-section" aria-labelledby="result-heading">
+      <h2 id="result-heading">Astronomy Picture Result</h2>
+      <p class="section-intro">
+        Your selected Astronomy Picture of the Day will appear below with its title,
+        date, explanation, and high-definition image link.
+      </p>
+      <div id="apod-result" class="preview-box">
+        <p>Select a date to view NASA's Astronomy Picture of the Day.</p>
+      </div>
+    </section>
+
+    <section id="favourites" class="features-section" aria-labelledby="favourites-heading">
+      <h2 id="favourites-heading">Saved Favourites</h2>
+      <p class="section-intro">
+        Saved favourites are stored in your browser using local storage. You can
+        delete saved images at any time.
+      </p>
+      <div id="favourites-list" class="feature-cards">
+        <p>No favourites saved yet.</p>
+      </div>
+    </section>
+
+    <section class="info-section" aria-labelledby="about-heading">
+      <h2 id="about-heading">About This App</h2>
+      <p>
+        APOD Search is a fully functional web application built with HTML, CSS, and
+        JavaScript. It uses the Fetch API to retrieve data from NASA's Astronomy
+        Picture of the Day API and uses localStorage to manage saved favourites.
+      </p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-content">
+      <h2>APOD Search</h2>
+      <p>
+        A responsive web application using NASA's Astronomy Picture of the Day API.
+      </p>
+      <ul class="social-links">
+        <li><a href="https://api.nasa.gov/" target="_blank" rel="noopener">NASA API</a></li>
+        <li><a href="https://apod.nasa.gov/" target="_blank" rel="noopener">APOD Archive</a></li>
+        <li><a href="#search">Search</a></li>
+        <li><a href="#favourites">Favourites</a></li>
+      </ul>
+      <p class="copyright">&copy; 2026 APOD Search. Capstone Part 4.</p>
+    </div>
+  </footer>
+
+</body>
 </html>
