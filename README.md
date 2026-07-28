@@ -2,7 +2,7 @@
 
 Name: Ufuk Doruk  
 Student Number: 041176659  
-Project Name: Low-Keyframes
+Project Name: APOD Search
 
 ## Low-Fidelity Wireframe
 This is the low-fidelity wireframe for the project.
@@ -46,3 +46,21 @@ The design was updated with a space-themed visual style. I used custom CSS for t
 The resources used for this prototype include NASA’s APOD API and space-themed images used for the page visuals. The project uses a system font stack: Arial, Helvetica, sans-serif.
 
 One challenge was changing the original prototype idea into the APOD Search application while keeping the same low-fidelity wireframe structure. Another challenge was adding the required JavaScript features, including Fetch API requests, local storage, favourites, and delete functionality, while keeping the code simple and organized.
+
+## Capstone Project - Part 4 Report
+
+For Part 4, I updated the APOD Search project into a fully functional web application using HTML, CSS, and JavaScript. The application uses one `index.html` file, one `style.css` file, and one `script.js` file.
+
+The page includes a date search form where users can choose a non-future date. When the form is submitted, the app uses the Fetch API to request data from NASA’s Astronomy Picture of the Day API. The result displays the APOD image, title, date, and explanation. When the displayed image is clicked, the high-definition version is shown on the same page.
+
+I also added a favourites section. Users can save APOD images as favourites, view saved favourites on the page, and delete them. The favourites are stored in the browser using localStorage, so they remain available after the page is refreshed.
+
+The design was updated with a space-themed style using custom CSS. I did not use Bootstrap, Tailwind, or any other CSS framework. The layout is responsive and works on desktop, tablet, and mobile screen sizes.
+
+All DOM events are handled with JavaScript event listeners. I did not use inline events. I also used `const` and `let` instead of `var`, and I used the Fetch API instead of XMLHttpRequest or jQuery ajax.
+
+Resources used for this project include NASA’s APOD API, NASA/APOD-related references, and space-themed images used for the visual design. The project uses a system font stack: Arial, Helvetica, sans-serif.
+
+I used AI assistance to help review parts of my code when something displayed incorrectly on the website. I wrote and updated the code myself, then used AI to ask questions about errors, layout issues, and possible fixes.
+
+One challenge was changing the project into a fully functional single-page application while keeping the structure close to the original wireframe. Another challenge was making the favourites system work correctly with localStorage and making sure the page did not refresh when the form was submitted.

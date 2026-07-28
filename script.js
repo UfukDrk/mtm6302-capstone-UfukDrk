@@ -16,15 +16,16 @@ function displayApod(apod) {
   currentApod = apod;
   result.innerHTML = `
     <article class="apod-card">
-      <a href="${apod.hdurl || apod.url}" target="_blank" rel="noopener">
-        <img src="${apod.url}" alt="${apod.title}">
-      </a>
+      <img id="apod-image" src="${apod.url}" alt="${apod.title}">
       <h3>${apod.title}</h3>
       <p class="apod-date">${apod.date}</p>
       <p class="apod-explanation">${apod.explanation}</p>
       <button class="button" id="save-favourite">Save Favourite</button>
     </article>
   `;
+  document.getElementById("apod-image").addEventListener("click", function () {
+    this.src = apod.hdurl || apod.url;
+  });
   document
     .getElementById("save-favourite")
     .addEventListener("click", saveCurrentFavourite);
